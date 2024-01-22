@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+</head>
+<body>
+    <p id="text"></p>
+    <button onclick="reloadpage()">Reload Page</button>
+    <button onclick="redirectinput()">visit the Site</button>
+    <script>
+        let origin = location.origin;
+        document.getElementById("text").innerHTML = origin;
+        function reloadpage() {
+            window.location.reload();
+        }
+        function redirectinput() {
+            const userInput = prompt('Enter the URL :', 'https://');
+            window.location.href = input;
+        }
+    </script>
+</body>
+</html>
